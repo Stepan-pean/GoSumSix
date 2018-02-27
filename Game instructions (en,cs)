@@ -1,0 +1,60 @@
+# Game instructions (en,cs)
+Ver. 27022018
+Name of game: GoSumSix
+
+EN:
+1. Each character is either a player or an AI.
+2. Each character gets a randomly assigned number (from 1 to 6) at the
+beginning of the game (or after died), the player throws a (virtual) dice.
+3. Friendly characters join groups. Each group has at least one character and
+only one leader.
+4. The group moves as a whole. Each group has the same constant speed.
+5. The group in which the player’s character is the leader moves along the
+map (there are several different paths between the start and goal of the
+level) and may encounter other groups.
+6. Each step that the whole group moves is immediately added to the number
+in modulo 6 for each group. Step right/up means plus one, step left/down means
+minus one.
+7. If the player’s group is friends with another group, they join him in the
+group.
+8. Groups are only be friended if their all numbers match.
+9. Groups that meet and not friended, fight.
+10. The fight wins the group whose sum of all numbers in modulo 6 is higher. If
+the sums are equal, the fight ends indecisively and the two groups coexist.
+If the totals are equal, the fight ends indecisively and the two groups
+coexist.
+11. The leader of the defeated group is killed (separates from their group and
+starts again on its own and without numbers, at a random location of the
+map).
+12. A defeated group without a leader joins the winning group.
+13. For a successful procedure (level completion) you must have at least one
+bearer in your group from each number.
+Note: 0 is displayed as 6.
+
+
+CS:
+1. Každá postava je buď hráč nebo UI.
+2. Každá postava dostane na začátku hry (či po své smrti) náhodně přiřazené
+číslo (od 1 do 6), hráč si hodí (virtuální) kostkou.
+3. Spřátelené postavy se spojují do skupin. Každá skupina má alespoň jednu
+postavu a právě jednoho vedoucího.
+4. Skupina se pohybuje jako celek. Každá skupina má stejnou konstantní
+rychlost.
+5. Skupina, v níž je hráčova postava vedoucí, se pohybuje po mapě (mezi
+startem a cílem levelu existuje více různě dlouhých cest) a může potkávat
+jiné skupiny.
+6. Každý krok o jaký se celá skupina pohne se okamžitě přičte k číslu
+v modulu 6 každému ve skupině. Krok vpravo/nahoru znamená přičtení jedničky,
+krok vlevo/dolu znamená odečtení jedničky.
+7. Pokud se hráčova skupina spřátelí s jinou skupinou, připojí se k němu do
+skupiny.
+8. Skupiny se spřátelí jen tehdy, pokud se jejich čísla vzájemně shodují.
+9. Skupiny, které se potkají a nespřátelí, bojují.
+10. Boj vyhrává ta skupina, jejíž součet čísel modulo 6 je vyšší. Pokud jsou
+součty rovny, boj skončí nerozhodně a obě skupiny koexistují.
+11. Vedoucí poražené skupiny je zabit (oddělí se od své skupiny a začíná znovu
+sám a bez čísla, na náhodném místě mapy).
+12. Poražená skupina bez velitele se připojí k vítězné skupině.
+13. Ke zdárnému postupu (dokončení levelu) je nutné mít ve své skupině od
+každého čísla alespoň jednoho nositele.
+Pozn.: 0 se zobrazuje jako 6.
